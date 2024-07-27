@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var quizForm = document.querySelector( '.wpcf7-form' );
     let quizInput = document.getElementById('quiz');
+    quizInput.setAttribute("type", "number");
+    quizInput.setAttribute("pattern", "[0-9]*"); 
+    quizInput.setAttribute("inputmode", "numeric");
     const submitButton = document.querySelector('.wpcf7-submit');
+    submitButton.classList.add("btn");
 
     document.addEventListener( 'wpcf7mailsent', function( event ) {
           console.log( "mailSent!" );
@@ -22,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let a1 = document.createElement("a");
         a1.classList.add("btn");
         a1.innerText = "Go to Puzzle #2";
+        a1.style["font-size"] = "1.2em";
         a1.setAttribute('href', "https://seiu503.org/faq/ckl5ju6rz2gtzjxau/");
         newDiv.appendChild(p1);
         newDiv.appendChild(p2);
@@ -31,7 +36,8 @@ document.addEventListener("DOMContentLoaded", function(){
         submitButton.style["display"] = "none";
         setTimeout(() => {
           document.querySelector('.wpcf7-response-output').style["display"] = "none";
-          document.querySelector('.wpcf7-response-output').style["display"] = "none";
+          document.querySelector('.wpcf7-quiz-label').style["display"] = "none";
+          document.getElementById('quiz').style["display"] = "none";  
         }, "500");
         }, false );
     document.addEventListener( 'wpcf7invalid', function( event ) {
@@ -50,8 +56,9 @@ document.addEventListener("DOMContentLoaded", function(){
         p3.style["margin-top"] = "20px";
         let a1 = document.createElement("a");
         a1.classList.add("btn");
+        a1.style["font-size"] = "1.2em";
         a1.innerText = "Reload Puzzle #1";
-        a1.setAttribute('href', "https://seiu503.org/clue/#p1");
+        a1.setAttribute('href', "https://seiu503.org/clue");
         newDiv.appendChild(p1);
         newDiv.appendChild(p2);
         newDiv.appendChild(a1);
