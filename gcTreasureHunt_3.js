@@ -17,18 +17,18 @@ document.addEventListener("DOMContentLoaded", function(){
         newDiv.style["border"] = "1px solid #46b450";
         newDiv.style["text-align"] = "center";
         let p1 = document.createElement("p");
-        p1.innerText = "Congratulations! You solved the first puzzle!";
+        p1.innerText = "Congratulations! You solved the third puzzle!";
         p1.after('&#127881;');
         let p2 = document.createElement("p");
-        p2.innerText = "Puzzle number 2 will be published at 6am on Friday August 2. If you try to click the link before then, you'll get a 'Page Not Found' error.";
+        p2.innerText = "Puzzle number 4 will be published at 6am on Saturday August 3. If you try to click the link before then, you'll get a 'Page Not Found' error.";
         let p3 = document.createElement("p");
-        p3.innerText = "If you click the link after Friday at 6am and see 'Page Not Found', try clearing your browser cache."
+        p3.innerText = "If you click the link after Saturday at 6am and see 'Page Not Found', try clearing your browser cache."
         p2.style["margin-top"] = "20px";
         let a1 = document.createElement("a");
         a1.classList.add("btn");
-        a1.innerText = "Go to Puzzle #2";
+        a1.innerText = "Go to Puzzle #4";
         a1.style["font-size"] = "1.2em";
-        a1.setAttribute('href', "https://seiu503.org/faq/ckl5ju6rz2gtzjxau/");
+        a1.setAttribute('href', "https://seiu503.org/faq/ic7emg4p4mfqmeeex/");
         newDiv.appendChild(p1);
         newDiv.appendChild(p2);
         newDiv.appendChild(p3);
@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function(){
         let a1 = document.createElement("a");
         a1.classList.add("btn");
         a1.style["font-size"] = "1.2em";
-        a1.innerText = "Reload Puzzle #1";
-        a1.setAttribute('href', "https://seiu503.org/clue");
+        a1.innerText = "Reload Puzzle #3";
+        a1.setAttribute('href', "https://seiu503.org/faq/l4yqcfkpzherw84xu/"); 
         newDiv.appendChild(p1);
         newDiv.appendChild(p2);
         newDiv.appendChild(a1);
