@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function(){
         p1.innerText = "Congratulations! You solved the third puzzle!";
         p1.after('&#127881;');
         let p2 = document.createElement("p");
-        p2.innerText = "Puzzle number 4 will be published at 6am on Saturday August 3. If you try to click the link before then, you'll get a 'Page Not Found' error.";
+        p2.innerText = "Puzzle number 4 will be published at 6am on Saturday August 3.";
         let p3 = document.createElement("p");
-        p3.innerText = "If you click the link after Saturday at 6am and see 'Page Not Found', try clearing your browser cache."
+        p3.innerText = "If it's not live yet, bookmark the link now to load it later."
         p2.style["margin-top"] = "20px";
         let a1 = document.createElement("a");
         a1.classList.add("btn");

@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
             let p2 = document.createElement("p");
             p2.innerText = "First, figure out which room in the hotel was built over a filled-in swimming pool. Hotel staff may be able to help you, or you can use your intuition. Look for clues in ceiling construction and lighting. In which of these rooms can you imagine floating on your back?";
             let p3 = document.createElement("p");
-            p3.innerText = "Once you’ve found the room, your search begins. You’re looking for a small black box, about the size of a deck of cards. It’s magnetic, and it’s attached inside something made of metal. It’s low to the ground and near the edge of the room.";
+            p3.innerText = "Go to the door at the Northeast corner of this room. Stand outside the door to the room and look for a much smaller door to open. Behind this small door, look for a black metal box, about the size of a deck of cards.";
             let p4 = document.createElement("p");
             p4.innerText = "When you find it: open the box. If you’re the very first team to complete the hunt, remove the first-finders prize, but leave the QR code and gamification codes for the next finders. Then please carefully replace the box exactly as you found it.";
             let p5 = document.createElement("p");
