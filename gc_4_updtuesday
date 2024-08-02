@@ -22,8 +22,10 @@ document.addEventListener("DOMContentLoaded", function(){
         let p2 = document.createElement("p");
         p2.innerText = "Now you need to find the QR code to get the link to puzzle #5.";
         let p3 = document.createElement("p");
-        p3.innerText = "Go to the 3rd floor. Look for the window seat nook by the elevators. Start your search there. When you find the QR code, either scan it to load Puzzle #5, or save the URL for later to open when Puzzle #5 is published."
+        p3.innerText = "Go to the 3rd floor. Look for the window seat nook by the elevators. Start your search there."
         p2.style["margin-top"] = "20px";
+        p4.innerText = "When you find the QR code, either scan it to load Puzzle 5, or save the URL to open when Puzzle 5 is published."
+        p3.style["margin-top"] = "20px";
         // let a1 = document.createElement("a");
         // a1.classList.add("btn");
         // a1.innerText = "Go to Puzzle #4";
@@ -32,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
         newDiv.appendChild(p1);
         newDiv.appendChild(p2);
         newDiv.appendChild(p3);
+        newDiv.appendChild(p4);
         // newDiv.appendChild(a1);
         submitButton.before(newDiv);
         submitButton.style["display"] = "none";
